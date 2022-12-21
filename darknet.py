@@ -111,9 +111,9 @@ def print_detections(detections, coordinates=False):
     for label, confidence, bbox in detections:
         x, y, w, h = bbox
         if coordinates:
-            print("{}: {}%    (left_x: {:.0f}   top_y:  {:.0f}   width:   {:.0f}   height:  {:.0f})".format(label, confidence, x, y, w, h))
+            print("Printing {}: {}%    (left_x: {:.0f}   top_y:  {:.0f}   width:   {:.0f}   height:  {:.0f})".format(label, confidence, x, y, w, h))
         else:
-            print("{}: {}%".format(label, confidence))
+            print("Printing {}: {}%".format(label, confidence))
 
 
 def draw_boxes(detections, image, colors):
